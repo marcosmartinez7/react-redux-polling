@@ -112,11 +112,11 @@ const initialState = {
 
 const usersReducer = createReducer(initialState,
     {
-        [POLL_CHANNELS](state, action) {
+        [POLL_USERS](state, action) {
             console.log("Dispatched poll")
             return {
                 ...state,
-                users:  action.data.channels,
+                users:  action.data.users,
                 usersChanged: action.data.usersChanged,
 
             };
