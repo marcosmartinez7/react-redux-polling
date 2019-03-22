@@ -14,7 +14,7 @@ To use the `PollingContainer` component you must install https://www.npmjs.com/p
 The polling container basically creates a observable subscription when mounting and remove it when unmount. 
 
 ```javascript
-mport React, {Component} from "react";
+import React, {Component} from "react";
 import { timer } from 'rxjs';
 
 /*
