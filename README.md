@@ -1,5 +1,5 @@
 # react-redux-polling
-Just an example of polling using React-Redux
+Just an example of polling using React-Redux using ReactiveX
 
 ## example
 
@@ -7,11 +7,13 @@ This is an example container that queries the list of Users periodically.
 
 The polling container executes the redux action `pollUsers` every 2 seconds.
 
+To use the `PollingContainer` component you must install https://www.npmjs.com/package/rxjs
+
 
 ### container
 
 ```javascript
-mport React, {Component} from "react";
+import React, {Component} from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import { pollUsers} from "../../actions/userActions";
